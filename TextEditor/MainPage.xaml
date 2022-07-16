@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="TextEditor.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TextEditor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button x:Name="BNew" Click="BNew_Click">New</Button>
+            <Button x:Name="BOpen" Click="BOpen_Click">Open</Button>
+            <Button x:Name="BSaveAs" Click="BSaveAs_Click">Save As</Button>
+            <Button x:Name="BAbout" Click="BAbout_Click">About</Button>
+        </StackPanel>
+        <TextBlock x:Name="BLName" Grid.Row="0" Grid.Column="1" TextAlignment="End"/>
+
+        <TextBox x:Name="Edit_TextBox" Grid.Row="1" Grid.ColumnSpan="2" 
+                 PlaceholderText="Type Here ...." AcceptsReturn="True"/>
+    </Grid>
+</Page>
