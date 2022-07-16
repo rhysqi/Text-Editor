@@ -1,5 +1,5 @@
 # Text-Editor
-Simple Text Editor
-Need MSVC build 140-143v
-Recommended Using Visual Studio 2022
-UWP Package need
+Simple Text Editor <br>
+-Need MSVC build 140-143v <br>
+-Recommended Using Visual Studio 2022 <br>
+-UWP Package need
